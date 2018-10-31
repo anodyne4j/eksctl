@@ -95,7 +95,7 @@ func CheckAllCommands(kubeconfigPath string, isContextSet bool, contextName stri
 
 const (
 	authenticatorCommand       = "aws-iam-authenticator"
-	legacyAuthenticatorCommand = "heptio-authenticator-aws"
+	legacyAuthenticatorCommand = "aws-iam-authenticator"
 )
 
 var authenticatorCommands = []string{
@@ -114,7 +114,7 @@ func checkAuthenticator() error {
 			return nil
 		}
 	}
-	return fmt.Errorf("neither aws-iam-authenticator nor heptio-authenticator-aws are installed")
+	return fmt.Errorf("aws-iam-authenticator nor heptio-authenticator-aws are installed")
 }
 
 // DetectAuthenticator finds the authenticator command, it defaults to legacy

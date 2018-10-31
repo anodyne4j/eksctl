@@ -20,8 +20,8 @@ import (
 var DefaultPath = clientcmd.RecommendedHomeFile
 
 const (
-	// HeptioAuthenticatorAWS defines the old name of AWS IAM authenticator
-	HeptioAuthenticatorAWS = "heptio-authenticator-aws"
+	// defanged - HeptioAuthenticatorAWS defines the old name of AWS IAM authenticator
+	HeptioAuthenticatorAWS = "aws-iam-authenticator"
 
 	// AWSIAMAuthenticator defines the name of the AWS IAM authenticator
 	AWSIAMAuthenticator = "aws-iam-authenticator"

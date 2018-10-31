@@ -686,7 +686,7 @@ var _ = Describe("CloudFormation template builder API", func() {
 			kubeconfig := getFile(c, "/etc/eksctl/kubeconfig.yaml")
 			Expect(kubeconfig).ToNot(BeNil())
 			Expect(kubeconfig.Permissions).To(Equal("0644"))
-			Expect(kubeconfig.Content).To(Equal(kubeconfigBody("heptio-authenticator-aws")))
+			Expect(kubeconfig.Content).To(Equal(kubeconfigBody("aws-iam-authenticator")))
 
 			ca := getFile(c, "/etc/eksctl/ca.crt")
 			Expect(ca).ToNot(BeNil())

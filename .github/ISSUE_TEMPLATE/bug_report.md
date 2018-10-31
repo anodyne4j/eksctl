@@ -23,7 +23,7 @@ $ eksctl version
 $ uname -a
 $ kubectl version
 ```
-Also include your version of `heptio-authenticator-aws`
+Also include your version of `heptio-authenticator-aws` or 'aws-iam-authenticator'
 
 **Logs**
 Include the output of the command line when running eksctl. If possible, eksctl should be run with debug logs. For example:
