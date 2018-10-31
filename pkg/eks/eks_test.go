@@ -13,9 +13,9 @@ import (
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 	"github.com/stretchr/testify/mock"
-	. "github.com/weaveworks/eksctl/pkg/eks"
-	"github.com/weaveworks/eksctl/pkg/eks/api"
-	"github.com/weaveworks/eksctl/pkg/testutils"
+	. "github.com/anodyne4j/eksctl/pkg/eks"
+	"github.com/anodyne4j/eksctl/pkg/eks/api"
+	"github.com/anodyne4j/eksctl/pkg/testutils"
 )
 
 var _ = Describe("Eks", func() {

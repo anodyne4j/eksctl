@@ -6,11 +6,11 @@ import (
 
 	"github.com/kubicorn/kubicorn/pkg/logger"
 	"github.com/spf13/cobra"
-	"github.com/weaveworks/eksctl/pkg/ctl/create"
-	"github.com/weaveworks/eksctl/pkg/ctl/delete"
-	"github.com/weaveworks/eksctl/pkg/ctl/get"
-	"github.com/weaveworks/eksctl/pkg/ctl/scale"
-	"github.com/weaveworks/eksctl/pkg/ctl/utils"
+	"github.com/anodyne4j/eksctl/pkg/ctl/create"
+	"github.com/anodyne4j/eksctl/pkg/ctl/delete"
+	"github.com/anodyne4j/eksctl/pkg/ctl/get"
+	"github.com/anodyne4j/eksctl/pkg/ctl/scale"
+	"github.com/anodyne4j/eksctl/pkg/ctl/utils"
 )
 
 var rootCmd = &cobra.Command{

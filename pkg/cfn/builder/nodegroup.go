@@ -6,9 +6,9 @@ import (
 	cfn "github.com/aws/aws-sdk-go/service/cloudformation"
 	gfn "github.com/awslabs/goformation/cloudformation"
 
-	"github.com/weaveworks/eksctl/pkg/eks/api"
+	"github.com/anodyne4j/eksctl/pkg/eks/api"
 
-	"github.com/weaveworks/eksctl/pkg/nodebootstrap"
+	"github.com/anodyne4j/eksctl/pkg/nodebootstrap"
 )
 
 // NodeGroupResourceSet stores the resource information of the node group

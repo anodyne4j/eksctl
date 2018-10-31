@@ -7,10 +7,10 @@ import (
 
 	"github.com/kubicorn/kubicorn/pkg/logger"
 	"github.com/spf13/cobra"
-	"github.com/weaveworks/eksctl/pkg/ctl"
-	"github.com/weaveworks/eksctl/pkg/eks"
-	"github.com/weaveworks/eksctl/pkg/eks/api"
-	"github.com/weaveworks/eksctl/pkg/utils/kubeconfig"
+	"github.com/anodyne4j/eksctl/pkg/ctl"
+	"github.com/anodyne4j/eksctl/pkg/eks"
+	"github.com/anodyne4j/eksctl/pkg/eks/api"
+	"github.com/anodyne4j/eksctl/pkg/utils/kubeconfig"
 )
 
 func deleteClusterCmd() *cobra.Command {

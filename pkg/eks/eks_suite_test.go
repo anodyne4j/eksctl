@@ -3,7 +3,7 @@ package eks_test
 import (
 	"testing"
 
-	"github.com/weaveworks/eksctl/pkg/testutils"
+	"github.com/anodyne4j/eksctl/pkg/testutils"
 )
 
 func TestEks(t *testing.T) {

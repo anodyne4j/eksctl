@@ -11,11 +11,11 @@ import (
 
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
-	. "github.com/weaveworks/eksctl/pkg/cfn/builder"
-	"github.com/weaveworks/eksctl/pkg/cloudconfig"
-	"github.com/weaveworks/eksctl/pkg/eks"
-	"github.com/weaveworks/eksctl/pkg/eks/api"
-	"github.com/weaveworks/eksctl/pkg/nodebootstrap"
+	. "github.com/anodyne4j/eksctl/pkg/cfn/builder"
+	"github.com/anodyne4j/eksctl/pkg/cloudconfig"
+	"github.com/anodyne4j/eksctl/pkg/eks"
+	"github.com/anodyne4j/eksctl/pkg/eks/api"
+	"github.com/anodyne4j/eksctl/pkg/nodebootstrap"
 )
 
 const (

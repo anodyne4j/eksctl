@@ -6,7 +6,7 @@ import (
 	cfn "github.com/aws/aws-sdk-go/service/cloudformation"
 	gfn "github.com/awslabs/goformation/cloudformation"
 
-	"github.com/weaveworks/eksctl/pkg/eks/api"
+	"github.com/anodyne4j/eksctl/pkg/eks/api"
 )
 
 // ClusterResourceSet stores the resource information of the cluster
@@ -106,7 +106,7 @@ func (c *ClusterResourceSet) GetAllOutputs(stack cfn.Stack) error {
 	c.spec.VPC.ID = c.outputs.VPC
 	c.spec.VPC.SecurityGroup = c.outputs.SecurityGroup
 
-	// TODO: shouldn't assume the order - https://github.com/weaveworks/eksctl/issues/293
+	// TODO: shouldn't assume the order - https://github.com/anodyne4j/eksctl/issues/293
 	for i, subnet := range c.outputs.SubnetsPrivate {
 		c.spec.ImportSubnet(api.SubnetTopologyPrivate, c.spec.AvailabilityZones[i], subnet)
 	}

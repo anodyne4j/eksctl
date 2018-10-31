@@ -20,9 +20,9 @@ import (
 	. "github.com/onsi/gomega"
 	"github.com/onsi/gomega/gexec"
 
-	"github.com/weaveworks/eksctl/pkg/testutils/aws"
-	. "github.com/weaveworks/eksctl/pkg/testutils/matchers"
-	"github.com/weaveworks/eksctl/pkg/utils"
+	"github.com/anodyne4j/eksctl/pkg/testutils/aws"
+	. "github.com/anodyne4j/eksctl/pkg/testutils/matchers"
+	"github.com/anodyne4j/eksctl/pkg/utils"
 )
 
 type tInterface interface {

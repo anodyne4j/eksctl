@@ -4,7 +4,7 @@ import (
 	"fmt"
 
 	"github.com/kubicorn/kubicorn/pkg/logger"
-	"github.com/weaveworks/eksctl/pkg/eks/api"
+	"github.com/anodyne4j/eksctl/pkg/eks/api"
 	"k8s.io/kops/pkg/util/subnet"
 )
 

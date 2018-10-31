@@ -126,6 +126,6 @@ func DetectAuthenticator() string {
 			return bin
 		}
 	}
-	// TODO: https://github.com/weaveworks/eksctl/issues/169
+	// TODO: https://github.com/anodyne4j/eksctl/issues/169
 	return legacyAuthenticatorCommand
 }

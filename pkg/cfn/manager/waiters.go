@@ -14,7 +14,7 @@ import (
 
 	"github.com/kubicorn/kubicorn/pkg/logger"
 
-	"github.com/weaveworks/eksctl/pkg/cfn/builder"
+	"github.com/anodyne4j/eksctl/pkg/cfn/builder"
 )
 
 const (

@@ -2,7 +2,7 @@ package ami
 
 import (
 	"github.com/kubicorn/kubicorn/pkg/logger"
-	"github.com/weaveworks/eksctl/pkg/utils"
+	"github.com/anodyne4j/eksctl/pkg/utils"
 )
 
 //go:generate go run ./static_resolver_ami_generate.go

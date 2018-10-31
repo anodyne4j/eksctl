@@ -1,7 +1,7 @@
 package manager
 
 import (
-	"github.com/weaveworks/eksctl/pkg/cfn/builder"
+	"github.com/anodyne4j/eksctl/pkg/cfn/builder"
 
 	"github.com/kubicorn/kubicorn/pkg/logger"
 )

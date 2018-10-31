@@ -5,11 +5,11 @@ import (
 	"os"
 	"time"
 
-	"github.com/weaveworks/eksctl/pkg/ami"
-	"github.com/weaveworks/eksctl/pkg/cfn/manager"
-	"github.com/weaveworks/eksctl/pkg/eks/api"
+	"github.com/anodyne4j/eksctl/pkg/ami"
+	"github.com/anodyne4j/eksctl/pkg/cfn/manager"
+	"github.com/anodyne4j/eksctl/pkg/eks/api"
 
-	"github.com/weaveworks/eksctl/pkg/az"
+	"github.com/anodyne4j/eksctl/pkg/az"
 
 	"github.com/pkg/errors"
 
@@ -142,7 +142,7 @@ func (c *ClusterProvider) CheckAuth() error {
 
 // EnsureAMI ensures that the node AMI is set and is available
 func (c *ClusterProvider) EnsureAMI(ng *api.NodeGroup) error {
-	// TODO: https://github.com/weaveworks/eksctl/issues/28
+	// TODO: https://github.com/anodyne4j/eksctl/issues/28
 	// - improve validation of parameter set overall, probably in another package
 	if ng.AMI == ami.ResolverAuto {
 		ami.DefaultResolvers = []ami.Resolver{ami.NewAutoResolver(c.Provider.EC2())}

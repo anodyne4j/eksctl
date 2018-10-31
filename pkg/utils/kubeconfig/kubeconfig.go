@@ -6,8 +6,8 @@ import (
 	"path"
 	"strings"
 
-	"github.com/weaveworks/eksctl/pkg/eks/api"
-	"github.com/weaveworks/eksctl/pkg/utils"
+	"github.com/anodyne4j/eksctl/pkg/eks/api"
+	"github.com/anodyne4j/eksctl/pkg/utils"
 
 	"github.com/pkg/errors"
 	"k8s.io/client-go/tools/clientcmd"

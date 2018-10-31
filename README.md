@@ -1,6 +1,6 @@
 # `eksctl` - a CLI for Amazon EKS
 
-[![Circle CI](https://circleci.com/gh/weaveworks/eksctl/tree/master.svg?style=shield)](https://circleci.com/gh/weaveworks/eksctl/tree/master) [![Coverage Status](https://coveralls.io/repos/github/weaveworks/eksctl/badge.svg?branch=master)](https://coveralls.io/github/weaveworks/eksctl?branch=master)[![Go Report Card](https://goreportcard.com/badge/github.com/weaveworks/eksctl)](https://goreportcard.com/report/github.com/weaveworks/eksctl)
+[![Circle CI](https://circleci.com/gh/weaveworks/eksctl/tree/master.svg?style=shield)](https://circleci.com/gh/weaveworks/eksctl/tree/master) [![Coverage Status](https://coveralls.io/repos/github/weaveworks/eksctl/badge.svg?branch=master)](https://coveralls.io/github/weaveworks/eksctl?branch=master)[![Go Report Card](https://goreportcard.com/badge/github.com/anodyne4j/eksctl)](https://goreportcard.com/report/github.com/anodyne4j/eksctl)
 
 `eksctl` is a simple CLI tool for creating clusters on EKS - Amazon's new managed Kubernetes service for EC2. It is written in Go, and uses CloudFormation.
 
@@ -13,7 +13,7 @@ You can create a cluster in minutes with just one command – **`eksctl create c
 To download the latest release, run:
 
 ```
-curl --silent --location "https://github.com/weaveworks/eksctl/releases/download/latest_release/eksctl_$(uname -s)_amd64.tar.gz" | tar xz -C /tmp
+curl --silent --location "https://github.com/anodyne4j/eksctl/releases/download/latest_release/eksctl_$(uname -s)_amd64.tar.gz" | tar xz -C /tmp
 sudo mv /tmp/eksctl /usr/local/bin
 ```
 
@@ -141,7 +141,7 @@ eksctl create cluster --ssh-access  --ssh-public-key=my_kubernetes_key --region=
 
 To add custom tags for all resources, use `--tags`.
 
-> NOTE: Until [https://github.com/weaveworks/eksctl/issues/25] is resolved, tags cannot be applied to EKS cluster itself, but most of other resources (e.g. EC2 nodes).
+> NOTE: Until [https://github.com/anodyne4j/eksctl/issues/25] is resolved, tags cannot be applied to EKS cluster itself, but most of other resources (e.g. EC2 nodes).
 
 ```
 eksctl create cluster --tags environment=staging --region=us-east-1
@@ -307,7 +307,7 @@ Code contributions are very welcome. If you are interested in helping make eksct
 
 ## Get in touch
 
-[Create an issue](https://github.com/weaveworks/eksctl/issues/new), or login to [Weave Community Slack (#eksctl)](https://weave-community.slack.com/messages/CAYBZBWGL/) ([signup](https://slack.weave.works/)).
+[Create an issue](https://github.com/anodyne4j/eksctl/issues/new), or login to [Weave Community Slack (#eksctl)](https://weave-community.slack.com/messages/CAYBZBWGL/) ([signup](https://slack.weave.works/)).
 
 > ***Logo Credits***
 >

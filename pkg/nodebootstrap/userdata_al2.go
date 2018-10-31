@@ -7,8 +7,8 @@ import (
 
 	"github.com/kubicorn/kubicorn/pkg/logger"
 
-	"github.com/weaveworks/eksctl/pkg/cloudconfig"
-	"github.com/weaveworks/eksctl/pkg/eks/api"
+	"github.com/anodyne4j/eksctl/pkg/cloudconfig"
+	"github.com/anodyne4j/eksctl/pkg/eks/api"
 )
 
 func makeAmazonLinux2Config(spec *api.ClusterConfig, nodeGroupID int) (configFiles, error) {
@@ -24,7 +24,7 @@ func makeAmazonLinux2Config(spec *api.ClusterConfig, nodeGroupID int) (configFil
 		configDir: {
 			"metadata.env": {content: strings.Join(makeMetadata(spec), "\n")},
 			"kubelet.env":  {content: strings.Join(makeKubeletParams(spec, nodeGroupID), "\n")},
-			// TODO: https://github.com/weaveworks/eksctl/issues/161
+			// TODO: https://github.com/anodyne4j/eksctl/issues/161
 			"ca.crt":          {content: string(spec.CertificateAuthorityData)},
 			"kubeconfig.yaml": {content: string(clientConfigData)},
 		},

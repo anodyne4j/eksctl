@@ -3,7 +3,7 @@ package cloudconfig_test
 import (
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
-	. "github.com/weaveworks/eksctl/pkg/cloudconfig"
+	. "github.com/anodyne4j/eksctl/pkg/cloudconfig"
 )
 
 var _ = Describe("cloudconfig", func() {

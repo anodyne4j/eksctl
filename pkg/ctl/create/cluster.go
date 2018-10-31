@@ -7,13 +7,13 @@ import (
 	"github.com/kubicorn/kubicorn/pkg/logger"
 	"github.com/pkg/errors"
 	"github.com/spf13/cobra"
-	"github.com/weaveworks/eksctl/pkg/ami"
-	"github.com/weaveworks/eksctl/pkg/ctl"
-	"github.com/weaveworks/eksctl/pkg/eks"
-	"github.com/weaveworks/eksctl/pkg/eks/api"
-	"github.com/weaveworks/eksctl/pkg/kops"
-	"github.com/weaveworks/eksctl/pkg/utils"
-	"github.com/weaveworks/eksctl/pkg/utils/kubeconfig"
+	"github.com/anodyne4j/eksctl/pkg/ami"
+	"github.com/anodyne4j/eksctl/pkg/ctl"
+	"github.com/anodyne4j/eksctl/pkg/eks"
+	"github.com/anodyne4j/eksctl/pkg/eks/api"
+	"github.com/anodyne4j/eksctl/pkg/kops"
+	"github.com/anodyne4j/eksctl/pkg/utils"
+	"github.com/anodyne4j/eksctl/pkg/utils/kubeconfig"
 )
 
 const (
@@ -59,7 +59,7 @@ func createClusterCmd() *cobra.Command {
 	fs.StringVarP(&ng.InstanceType, "node-type", "t", defaultNodeType, "node instance type")
 	fs.IntVarP(&ng.DesiredCapacity, "nodes", "N", api.DefaultNodeCount, "total number of nodes (for a static ASG)")
 
-	// TODO: https://github.com/weaveworks/eksctl/issues/28
+	// TODO: https://github.com/anodyne4j/eksctl/issues/28
 	fs.IntVarP(&ng.MinSize, "nodes-min", "m", 0, "minimum nodes in ASG")
 	fs.IntVarP(&ng.MaxSize, "nodes-max", "M", 0, "maximum nodes in ASG")
 
@@ -227,7 +227,7 @@ func doCreateCluster(cfg *api.ClusterConfig, ng *api.NodeGroup, name string) err
 
 		// check kubectl version, and offer install instructions if missing or old
 		// also check heptio-authenticator
-		// TODO: https://github.com/weaveworks/eksctl/issues/30
+		// TODO: https://github.com/anodyne4j/eksctl/issues/30
 		env, err := ctl.GetCredentialsEnv()
 		if err != nil {
 			return err

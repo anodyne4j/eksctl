@@ -11,8 +11,8 @@ import (
 	"github.com/aws/aws-sdk-go/aws/session"
 	"github.com/aws/aws-sdk-go/service/ec2"
 
-	"github.com/weaveworks/eksctl/pkg/ami"
-	"github.com/weaveworks/eksctl/pkg/eks/api"
+	"github.com/anodyne4j/eksctl/pkg/ami"
+	"github.com/anodyne4j/eksctl/pkg/eks/api"
 
 	. "github.com/dave/jennifer/jen"
 )

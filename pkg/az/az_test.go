@@ -3,10 +3,10 @@ package az_test
 import (
 	"fmt"
 
-	. "github.com/weaveworks/eksctl/pkg/az"
-	"github.com/weaveworks/eksctl/pkg/eks"
-	"github.com/weaveworks/eksctl/pkg/eks/api"
-	"github.com/weaveworks/eksctl/pkg/testutils"
+	. "github.com/anodyne4j/eksctl/pkg/az"
+	"github.com/anodyne4j/eksctl/pkg/eks"
+	"github.com/anodyne4j/eksctl/pkg/eks/api"
+	"github.com/anodyne4j/eksctl/pkg/testutils"
 
 	"github.com/aws/aws-sdk-go/aws"
 	. "github.com/onsi/ginkgo"

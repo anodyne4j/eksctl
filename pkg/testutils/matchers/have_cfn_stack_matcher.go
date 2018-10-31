@@ -7,7 +7,7 @@ import (
 
 	"github.com/aws/aws-sdk-go/aws/session"
 	"github.com/onsi/gomega/types"
-	"github.com/weaveworks/eksctl/pkg/testutils/aws"
+	"github.com/anodyne4j/eksctl/pkg/testutils/aws"
 )
 
 // HaveExistingStack returns a GoMega matcher that will check for the existence of an cloudformation stack

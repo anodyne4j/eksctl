@@ -30,14 +30,14 @@ The project uses Slack. If you get stuck or just have a question then you are en
 
 This is a rough outline of how to prepare a contribution:
 
-- Find an [issue](https://github.com/weaveworks/eksctl/issues) to work on. If you are a new contributor
-take a look at issues marked with [good first issue](https://github.com/weaveworks/eksctl/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22).
+- Find an [issue](https://github.com/anodyne4j/eksctl/issues) to work on. If you are a new contributor
+take a look at issues marked with [good first issue](https://github.com/anodyne4j/eksctl/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22).
 - Create a topic branch from where you want to base your work (usually branched from master).
 - Make commits of logical units.
 - Make sure your commit messages are in the proper format (see below).
 - Push your changes to a topic branch in your fork of the repository.
 - If you changed code:
-   - add automated tests to cover your changes. See the [az](https://github.com/weaveworks/eksctl/tree/master/pkg/az) package for a good example of tests.
+   - add automated tests to cover your changes. See the [az](https://github.com/anodyne4j/eksctl/tree/master/pkg/az) package for a good example of tests.
 - Submit a pull request to the original repository.
 
 If your PR is a work in progress then make sure you prefix the title with `WIP: `. This lets everyone know that this is still being worked on. Once its ready
@@ -58,7 +58,7 @@ You can run the unit tests by simply doing
 make test
 ```
 
-There are integration tests for *eksctl* being developed and more details of how to run them will be included here. You can follow the progress [here](https://github.com/weaveworks/eksctl/issues/151).
+There are integration tests for *eksctl* being developed and more details of how to run them will be included here. You can follow the progress [here](https://github.com/anodyne4j/eksctl/issues/151).
 
 # Acceptance policy
 

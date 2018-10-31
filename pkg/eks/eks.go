@@ -7,7 +7,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/weaveworks/eksctl/pkg/printers"
+	"github.com/anodyne4j/eksctl/pkg/printers"
 
 	"github.com/pkg/errors"
 	"k8s.io/apimachinery/pkg/util/sets"
@@ -151,7 +151,7 @@ func (c *ClusterProvider) doGetCluster(clusterName *string, printer printers.Out
 
 // ListAllTaggedResources lists all tagged resources
 func (c *ClusterProvider) ListAllTaggedResources() error {
-	// TODO: https://github.com/weaveworks/eksctl/issues/26
+	// TODO: https://github.com/anodyne4j/eksctl/issues/26
 	return nil
 }
 

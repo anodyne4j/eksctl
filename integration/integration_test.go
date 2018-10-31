@@ -7,8 +7,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/weaveworks/eksctl/pkg/eks/api"
-	"github.com/weaveworks/eksctl/pkg/testutils"
+	"github.com/anodyne4j/eksctl/pkg/eks/api"
+	"github.com/anodyne4j/eksctl/pkg/testutils"
 )
 
 const (

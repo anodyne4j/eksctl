@@ -22,14 +22,14 @@ RUN apk add --no-cache --initdb --root /out \
     python \
     && true
 
-ENV EKSCTL $GOPATH/src/github.com/weaveworks/eksctl
+ENV EKSCTL $GOPATH/src/github.com/anodyne4j/eksctl
 RUN mkdir -p "$(dirname ${EKSCTL})"
 COPY . $EKSCTL
 
 ARG COVERALLS_TOKEN
 ENV COVERALLS_TOKEN $COVERALLS_TOKEN
 
-ENV JUNIT_REPORT_FOLDER $GOPATH/src/github.com/weaveworks/eksctl/test-results/ginkgo
+ENV JUNIT_REPORT_FOLDER $GOPATH/src/github.com/anodyne4j/eksctl/test-results/ginkgo
 RUN mkdir -p "${JUNIT_REPORT_FOLDER}"
 
 WORKDIR $EKSCTL

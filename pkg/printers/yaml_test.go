@@ -10,7 +10,7 @@ import (
 	"io/ioutil"
 	"time"
 
-	. "github.com/weaveworks/eksctl/pkg/printers"
+	. "github.com/anodyne4j/eksctl/pkg/printers"
 
 	"github.com/aws/aws-sdk-go/aws"
 	awseks "github.com/aws/aws-sdk-go/service/eks"

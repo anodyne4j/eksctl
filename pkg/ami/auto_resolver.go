@@ -4,7 +4,7 @@ import (
 	"github.com/aws/aws-sdk-go/service/ec2/ec2iface"
 	"github.com/kubicorn/kubicorn/pkg/logger"
 	"github.com/pkg/errors"
-	"github.com/weaveworks/eksctl/pkg/utils"
+	"github.com/anodyne4j/eksctl/pkg/utils"
 )
 
 // ImageSearchPatterns is a map of image search patterns by

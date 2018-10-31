@@ -3,7 +3,7 @@ package printers_test
 import (
 	"testing"
 
-	"github.com/weaveworks/eksctl/pkg/testutils"
+	"github.com/anodyne4j/eksctl/pkg/testutils"
 )
 
 func TestPrinters(t *testing.T) {

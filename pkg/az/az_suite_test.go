@@ -3,7 +3,7 @@ package az_test
 import (
 	"testing"
 
-	"github.com/weaveworks/eksctl/pkg/testutils"
+	"github.com/anodyne4j/eksctl/pkg/testutils"
 )
 
 func TestAZ(t *testing.T) {

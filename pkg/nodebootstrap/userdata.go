@@ -7,10 +7,10 @@ import (
 	"github.com/pkg/errors"
 	"k8s.io/client-go/tools/clientcmd"
 
-	"github.com/weaveworks/eksctl/pkg/ami"
-	"github.com/weaveworks/eksctl/pkg/cloudconfig"
-	"github.com/weaveworks/eksctl/pkg/eks/api"
-	"github.com/weaveworks/eksctl/pkg/utils/kubeconfig"
+	"github.com/anodyne4j/eksctl/pkg/ami"
+	"github.com/anodyne4j/eksctl/pkg/cloudconfig"
+	"github.com/anodyne4j/eksctl/pkg/eks/api"
+	"github.com/anodyne4j/eksctl/pkg/utils/kubeconfig"
 )
 
 //go:generate ${GOPATH}/bin/go-bindata -pkg ${GOPACKAGE} -prefix assets -modtime 1 -o assets.go assets
@@ -97,7 +97,7 @@ func makeKubeletParams(spec *api.ClusterConfig, nodeGroupID int) []string {
 	if ng.MaxPodsPerNode == 0 {
 		ng.MaxPodsPerNode = maxPodsPerNodeType[ng.InstanceType]
 	}
-	// TODO: use componentconfig or kubelet config file – https://github.com/weaveworks/eksctl/issues/156
+	// TODO: use componentconfig or kubelet config file – https://github.com/anodyne4j/eksctl/issues/156
 	return []string{
 		fmt.Sprintf("MAX_PODS=%d", ng.MaxPodsPerNode),
 		fmt.Sprintf("CLUSTER_DNS=%s", clusterDNS(spec)),

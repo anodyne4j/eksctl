@@ -7,8 +7,8 @@ import (
 	"strings"
 
 	"github.com/pkg/errors"
-	"github.com/weaveworks/eksctl/pkg/eks/api"
-	"github.com/weaveworks/eksctl/pkg/utils/kubeconfig"
+	"github.com/anodyne4j/eksctl/pkg/eks/api"
+	"github.com/anodyne4j/eksctl/pkg/utils/kubeconfig"
 
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/service/ec2"
@@ -25,7 +25,7 @@ import (
 
 	"k8s.io/kops/pkg/pki"
 
-	"github.com/weaveworks/eksctl/pkg/utils"
+	"github.com/anodyne4j/eksctl/pkg/utils"
 )
 
 func (c *ClusterProvider) getKeyPairName(ng *api.NodeGroup, fingerprint *string) string {
@@ -96,7 +96,7 @@ func (c *ClusterProvider) importSSHPublicKeyIfNeeded(ng *api.NodeGroup) error {
 // LoadSSHPublicKey loads the given SSH public key
 func (c *ClusterProvider) LoadSSHPublicKey(ng *api.NodeGroup) error {
 	if !ng.AllowSSH {
-		// TODO: https://github.com/weaveworks/eksctl/issues/144
+		// TODO: https://github.com/anodyne4j/eksctl/issues/144
 		return nil
 	}
 	ng.SSHPublicKeyPath = utils.ExpandPath(ng.SSHPublicKeyPath)

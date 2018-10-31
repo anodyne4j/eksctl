@@ -6,7 +6,7 @@ import (
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/ginkgo/extensions/table"
 	. "github.com/onsi/gomega"
-	"github.com/weaveworks/eksctl/pkg/ami"
+	"github.com/anodyne4j/eksctl/pkg/ami"
 )
 
 var _ = Describe("AMI Static Resolution", func() {
